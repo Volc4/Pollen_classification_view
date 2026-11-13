@@ -1,0 +1,5 @@
+2026-11-13 08:03:16.174617: I tensorflow/c/logging.cc:34] Successfully opened dynamic library C:\Users\Luidg.DESKTOP-KJR1QFP\miniconda3\envs\polen\lib\site-packages\tensorflow-plugins/directml/directml.d6f03b303ac3c4f2eeb8ca631688c9757b361310.dll
+2026-11-13 08:03:16.176632: I tensorflow/c/logging.cc:34] Successfully opened dynamic library dxgi.dll
+2026-11-13 08:03:16.188765: I tensorflow/c/logging.cc:34] Successfully opened dynamic library d3d12.dll
+2026-11-13 08:03:16.387397: I tensorflow/c/logging.cc:34] DirectML device enumeration: found 1 compatible adapters.
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]

@@ -39,7 +39,11 @@ os.environ["tf_gpu_allocator"]="cuda_malloc_async"
 sys.path.insert(0, os.getcwd())
 print(sys.path)
 
-from models import  utils, get_data, models_train, sound_test_finalizado, maneger_gpu, send_whatsApp_msn
+from models import  utils, get_data, models_train, sound_test_finalizado, maneger_gpu
+try:
+    from models import send_whatsApp_msn
+except Exception:
+    send_whatsApp_msn = None
 from models import reports_build as reports
 
 

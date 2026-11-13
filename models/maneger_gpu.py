@@ -29,7 +29,11 @@ def get_cpu_memory_usage():
 
 def get_gpu_memory_usage():
     """Retrieves GPU memory usage information using nvidia-smi."""
-    nvidia_smi.nvmlInit()
+    try:
+        nvidia_smi.nvmlInit()
+    except Exception:
+        # Sem GPU NVIDIA (ex.: AMD com DirectML): devolve valores neutros
+        return 0.0, 1.0, 1.0
     handle = nvidia_smi.nvmlDeviceGetHandleByIndex(0)  # Assuming using GPU 0
     info = nvidia_smi.nvmlDeviceGetMemoryInfo(handle)
     used_memory = info.used / (1024 ** 2)  # Convert to MB
