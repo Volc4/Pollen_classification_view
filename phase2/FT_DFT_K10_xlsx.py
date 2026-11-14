@@ -157,6 +157,11 @@ def hyper_model(config_model):
       modularity, and clear comments.
     """
     
+    # CNN leve do Zaykov (treinada do zero), fora do caminho dos modelos pré-treinados
+    if config_model['model'] == 'ZaykovCNN':
+        from models.models_zaykov import build_zaykov_model
+        return build_zaykov_model(config_model)
+
     # Initialize the specified pre-trained model
     model = eval(config_model['model'])
     id_test = config_model['id_test']
