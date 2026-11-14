@@ -1,0 +1,26 @@
+  k1: treino  8618 (3622 originais), teste  403 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+  k2: treino  8618 (3622 originais), teste  403 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+  k3: treino  8619 (3622 originais), teste  403 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+  k4: treino  8619 (3622 originais), teste  403 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+  k5: treino  8619 (3622 originais), teste  403 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+  k6: treino  8619 (3623 originais), teste  402 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+  k7: treino  8618 (3623 originais), teste  402 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+  k8: treino  8618 (3623 originais), teste  402 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+  k9: treino  8618 (3623 originais), teste  402 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+ k10: treino  8618 (3623 originais), teste  402 | teste também no treino: 0 | aumentadas no teste: 0
+      treino por classe: menor asphodelus (400), maior olea (711)
+
+Imagens originais: 4025
+Originais que não caíram em nenhum teste: 0
+Originais que caíram em mais de um teste: 0
+
+RESULTADO: folds OK

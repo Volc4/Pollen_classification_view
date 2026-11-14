@@ -48,6 +48,7 @@ def create_dataset(data_path, csv_path, categories):
             continue
 
         filenames = [f for f in os.listdir(category_path) if os.path.isfile(os.path.join(category_path, f)) and not f.startswith(".")]
+        filenames.sort()  # ordem fixa: mesmos folds no Windows e no Linux
 
         for filename in filenames:
             data.loc[c] = [os.path.join(category_path, filename), category]
@@ -121,8 +122,9 @@ def copy_images(training_data, dst):
     - dst (str): Destination directory where the images will be copied.
     """
     for file_path in training_data['file']:
-        folder = file_path.split('/')[-2]
-        filename = file_path.split('/')[-1]
+        file_path = os.path.normpath(file_path)
+        folder = os.path.basename(os.path.dirname(file_path))
+        filename = os.path.basename(file_path)
 
         dst_folder = os.path.join(dst, folder)
         create_folders(dst_folder, overwrite_flag=0)

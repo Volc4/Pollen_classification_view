@@ -191,10 +191,12 @@ def augment_images(images, factor, save_dir, img_type='png', verbose=0):
     ], random_order=True)
 
     aug_images = []
+    contador = len(os.listdir(save_dir))  # nomes únicos mesmo com relógio de baixa resolução
     for _ in range(factor):
         augmented_batch = aug(images=images)
         for img in augmented_batch:
-            filename = os.path.join(save_dir, f"aug_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}.{img_type}")
+            contador += 1
+            filename = os.path.join(save_dir, f"aug_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}_{contador:05d}.{img_type}")
             imageio.imwrite(filename, img)
             aug_images.append(img)
             log_message(f"Saved augmented image: {filename}", verbose)
