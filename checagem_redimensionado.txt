@@ -1,0 +1,44 @@
+
+Pasta: BD/CPD1_Cr_Rs
+
+classe                     imagens  README   dif
+asphodelus                      34      34    +0
+calicotome                     298     298    +0
+castanea                       218     218    +0
+ceratonia                      100     100    +0
+ebenus                          22      22    +0
+erica                          181     181    +0
+eucalyptus                     170     170    +0
+ferula                          83      83    +0
+myrtus                         786     786    +0
+olea                           790     790    +0
+origanum                       171     171    +0
+oxalis                         139     139    +0
+pinus                           29      29    +0
+pistacia                        34      34    +0
+salvia                         178     178    +0
+satureja                        71      71    +0
+sinapis                        197     197    +0
+thymbra                        146     146    +0
+urginea                        109     109    +0
+vitis                          269     269    +0
+TOTAL                         4025    4025
+(a tese fala em 4.034 imagens; o README lista 4.025)
+
+Extensões encontradas: {'.png': 4025}
+Tamanhos: 1 diferentes; largura 224 a 224, altura 224 a 224 px
+
+Duplicatas exatas (MD5): 13 grupo(s), 26 arquivo(s)
+   myrtus/IMG_3737-64.png = myrtus/IMG_3737-73.png 
+   myrtus/IMG_3737-67.png = myrtus/IMG_3737-70.png 
+   myrtus/IMG_3738-116.png = myrtus/IMG_3738-143.png 
+   myrtus/IMG_3738-118.png = myrtus/IMG_3738-145.png 
+   myrtus/IMG_3738-119.png = myrtus/IMG_3738-146.png 
+   myrtus/IMG_3738-125.png = myrtus/IMG_3738-152.png 
+   myrtus/IMG_3738-128.png = myrtus/IMG_3738-155.png 
+   myrtus/IMG_3738-131.png = myrtus/IMG_3738-141.png 
+   myrtus/IMG_3741-53.png = myrtus/IMG_3741-62.png 
+   myrtus/IMG_3741-58.png = myrtus/IMG_3741-67.png 
+   myrtus/IMG_3743-30.png = myrtus/IMG_3743-37.png 
+   myrtus/IMG_3743-32.png = myrtus/IMG_3743-39.png 
+   myrtus/IMG_3743-34.png = myrtus/IMG_3743-41.png 
