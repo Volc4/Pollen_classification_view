@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+66,ebenus\Fab.E.creX400wF(694)(0)B-2.png,4,1,0.77885216,ebenus,calicotome,Incorrect
+191,olea\Ole.O.euroX400wF(4261)(0)A-44.png,9,16,0.5831795,olea,sinapis,Incorrect
+202,olea\Ole.O.euroX400wF(4263)(0)C-126.png,9,16,0.994118,olea,sinapis,Incorrect
+279,origanum\Lam.O.micX400wF(887)(0)D-8.png,10,15,0.71982396,origanum,satureja,Incorrect
+358,thymbra\x40 f (1)-1.png,17,3,0.50985116,thymbra,ceratonia,Incorrect

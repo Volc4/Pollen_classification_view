@@ -1,0 +1,5 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+91,eucalyptus\Myr.E.camaX400wF(1869)(0)D-9.png,6,8,0.6332758,eucalyptus,myrtus,Incorrect
+94,eucalyptus\Myr.E.camaX400wF(1871)(0)F-11.png,6,3,0.80653316,eucalyptus,ceratonia,Incorrect
+285,origanum\Lam.O.micX400wF(889)(0)F-47.png,10,2,0.9632478,origanum,castanea,Incorrect
+316,salvia\Lam.S.triX400wF(2190)(0)C-8.png,14,3,0.913945,salvia,ceratonia,Incorrect
