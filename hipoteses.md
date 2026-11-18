@@ -60,3 +60,33 @@ do grão comparáveis às da DenseNet201.
 
 Critério: avaliação visual em uma amostra fixa de imagens de teste.
 
+## Emenda (18/11/2026), registrada depois do braço RGB e antes do braço com a receita do Zaykov
+
+
+
+Motivo: com a receita da tese (taxa fixa, paciência 10), a CNN em cor teve
+
+acurácia de 86,82% ± 1,8, e todos os folds pararam entre as épocas 14 e 31,
+
+com validação muito instável. A receita pode estar prejudicando a CNN.
+
+
+
+\## H5. CNN do Zaykov (RGB) com a receita original do autor
+
+Receita: taxa 0,0005 constante até a época 30, depois multiplicada por 0,98
+
+a cada época; early stopping com paciência 15.
+
+Hipótese: melhora modesta em relação à receita da tese (de 1 a 5 pontos),
+
+ainda abaixo de 97%, porque a validação instável pode parar o treino antes
+
+da época 30.
+
+Critério: se passar de 97%, a avaliação da H1 é refeita com esta receita;
+
+se não, a conclusão da H1 se mantém.
+
+O braço em cinza (H3) usará a receita que der a maior acurácia média em cor.
+
