@@ -158,7 +158,7 @@ def hyper_model(config_model):
     """
     
     # CNN leve do Zaykov (treinada do zero), fora do caminho dos modelos pré-treinados
-    if config_model['model'] in ('ZaykovCNN', 'ZaykovCNN_receita'):
+    if config_model['model'] in ('ZaykovCNN', 'ZaykovCNN_receita', 'ZaykovCNN_cinza'):
         from models.models_zaykov import build_zaykov_model
         return build_zaykov_model(config_model)
 

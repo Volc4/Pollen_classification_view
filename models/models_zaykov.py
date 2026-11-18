@@ -12,6 +12,12 @@ from keras import layers, models
 def zaykov_cnn(num_classes=20, canais=3, img_size=224, nome="ZaykovCNN"):
     m = models.Sequential(name=nome)
     m.add(keras.Input(shape=(img_size, img_size, canais)))
+    if nome == "ZaykovCNN_cinza":
+        # RGB -> cinza dentro do modelo (mesmos pesos de tf.image.rgb_to_grayscale)
+        import numpy as np
+        cinza = layers.Conv2D(1, 1, use_bias=False, trainable=False, name="rgb_para_cinza")
+        m.add(cinza)
+        cinza.set_weights([np.array([0.2989, 0.5870, 0.1140], dtype="float32").reshape(1, 1, 3, 1)])
     for f in [8, 16, 32, 64, 128, 256, 512]:
         m.add(layers.Conv2D(f, 3, padding="same", name=f"conv_{f}"))
         m.add(layers.BatchNormalization(name=f"bn_{f}"))

@@ -56,7 +56,7 @@ def run_train(train_data, val_data, model_fine, train_config):
     with tf.device('/device:GPU:0'):
         print('\n', start_time)
         callbacks_list = create_callbacks()
-        if model_fine.name == 'ZaykovCNN_receita':  # receita original do Zaykov
+        if model_fine.name in ('ZaykovCNN_receita', 'ZaykovCNN_cinza'):  # receita original do Zaykov
             from models.models_zaykov import callbacks_zaykov
             callbacks_list = callbacks_zaykov()
         history = model_fine.fit(
