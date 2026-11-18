@@ -1,0 +1,5 @@
+modelo,parametros,arquivo_MB,ms_por_imagem_mediana,ms_por_imagem_p90,vezes_mais_rapido_que_DenseNet
+DenseNet201,18360404,221.9,425.68,433.3,1.0
+CNN Zaykov (receita da tese),2669380,32.2,20.65,21.6,20.6
+CNN Zaykov (receita do autor),2669380,32.2,20.39,20.95,20.9
+CNN Zaykov (cinza),2669239,32.2,21.04,21.6,20.2
