@@ -9,8 +9,8 @@ import keras
 from keras import layers, models
 
 
-def zaykov_cnn(num_classes=20, canais=3, img_size=224):
-    m = models.Sequential(name="ZaykovCNN")
+def zaykov_cnn(num_classes=20, canais=3, img_size=224, nome="ZaykovCNN"):
+    m = models.Sequential(name=nome)
     m.add(keras.Input(shape=(img_size, img_size, canais)))
     for f in [8, 16, 32, 64, 128, 256, 512]:
         m.add(layers.Conv2D(f, 3, padding="same", name=f"conv_{f}"))
@@ -26,7 +26,7 @@ def zaykov_cnn(num_classes=20, canais=3, img_size=224):
 
 def build_zaykov_model(config_model):
     """Cria e compila a CNN com o otimizador e a taxa de aprendizado da planilha."""
-    model = zaykov_cnn(num_classes=int(config_model["num_classes"]))
+    model = zaykov_cnn(num_classes=int(config_model["num_classes"]), nome=config_model["model"])
     otimizadores = {"Adam": keras.optimizers.Adam, "RMSprop": keras.optimizers.RMSprop,
                     "Adagrad": keras.optimizers.Adagrad, "SGD": keras.optimizers.SGD}
     nome = config_model["optimizer"]
@@ -36,3 +36,16 @@ def build_zaykov_model(config_model):
     model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
     model.summary()
     return model
+
+
+def callbacks_zaykov():
+    """Callbacks da receita original do Zaykov."""
+    from keras.callbacks import EarlyStopping, LearningRateScheduler
+
+    def agenda(epoch, lr):
+        return lr if epoch < 30 else lr * 0.98
+
+    return [
+        EarlyStopping(monitor="val_loss", patience=15, restore_best_weights=True, mode="min", verbose=1),
+        LearningRateScheduler(agenda, verbose=0),
+    ]
