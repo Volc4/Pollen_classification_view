@@ -1,0 +1,6 @@
+,file,y_true,y_pred,confidence,true_label,predicted_label,status
+8,calicotome\Fab.C.vilX400wF(2018)(0)C-23.png,1,4,0.42495975,calicotome,ebenus,Incorrect
+59,ceratonia\Fab.C.silX400wF(478)(0)D-11.png,3,9,0.9208185,ceratonia,olea,Incorrect
+62,ceratonia\Fab.C.silX400wF(479)(0)E-11.png,3,19,0.92953867,ceratonia,vitis,Incorrect
+64,ceratonia\Fab.C.silX400wF(479)(0)E-4.png,3,10,0.4906219,ceratonia,origanum,Incorrect
+324,satureja\Lam.S.thyX400wF(942)(935)B-2.png,15,10,0.66939116,satureja,origanum,Incorrect
